@@ -1,3 +1,6 @@
+/* -----------
+font family 
+-------------- */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@400;500;600;700;900&display=swap');
 
 /* --------------------header start------------------- */
@@ -83,9 +86,10 @@ body {
     height: 613px;
 }
 
-/* ----------------------------------header End------------------------ */
+/* ---------------------------------main section end------------------------ */
 
 
+/* --------------------------Main start ------------------------------------- */
 .middle-container {
     display: flex;
     justify-content: space-around;
@@ -144,63 +148,6 @@ body {
     align-items: center;
 }
 
-.bonus-btn {
-    width: 187px;
-    height: 56px;
-    font-size: 24px;
-    text-decoration: none;
-    color: #fff;
-    padding: 16px 25px 16px 25px;
-    border-radius: 5px;
-    background-color: #DD0000;
-    position: absolute;
-    top: 190%;
-    left: 45%;
-    display: none;
-    justify-content: center;
-    align-items: center;
-
-}
-
-
-
-.footer-title {
-    text-align: center;
-    color: #fff;
-}
-
-hr {
-    width: 1321px;
-    border: 0.1px solid rgba(255, 255, 255, 0.1);
-}
-
-.last-container {
-    width: 1600px;
-    height: 444px;
-    margin: 0 auto;
-    margin-top: 200px;
-    background-color: #161616;
-    border: 1px solid firebrick;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer-list ul li {
-    list-style-type: none;
-    display: inline-block;
-
-}
-
-.footer-list ul li a {
-    text-decoration: none;
-    font-size: 16px;
-    color: #B9B9B9;
-    padding: 0 15px;
-}
-
-
 .card-section ul li {
     list-style-type: none;
     background-color: #fff;
@@ -223,6 +170,66 @@ hr {
 
 }
 
+.bonus-btn {
+    width: 187px;
+    height: 56px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+    padding: 16px 25px 16px 25px;
+    border-radius: 5px;
+    background-color: #DD0000;
+    position: absolute;
+    top: 190%;
+    left: 45%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* --------------------------main section end ------------------------------------- */
+
+/* --------------------------footer start ------------------------------------- */
+
+.last-container {
+    width: 1600px;
+    height: 444px;
+    margin: 0 auto;
+    margin-top: 200px;
+    background-color: #161616;
+    border: 1px solid firebrick;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-title {
+    text-align: center;
+    color: #fff;
+}
+
+hr {
+    width: 1321px;
+    border: 0.1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+
+.footer-list ul li {
+    list-style-type: none;
+    display: inline-block;
+
+}
+
+.footer-list ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #B9B9B9;
+    padding: 0 15px;
+}
+
 .fa-facebook-f {
     color: rgba(101, 101, 221, 0.849);
     margin-right: 20px;
@@ -238,7 +245,7 @@ hr {
     margin-right: 20px;
 }
 
-
+/* -------------------------------footer end ----------------------------------- */
 
 /*-----------------
     Tablet Device
@@ -334,20 +341,6 @@ hr {
 
     }
 
-    .last-container {
-        width: 734px;
-        height: 398px;
-        margin: 0 auto;
-        position: relative;
-        margin-top: 50%;
-        background-color: #161616;
-        border: 1px solid firebrick;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
     .card-see-more {
         display: none;
     }
@@ -382,5 +375,176 @@ hr {
         align-items: center;
 
     }
+
+    .last-container {
+        width: 734px;
+        height: 398px;
+        margin: 0 auto;
+        position: relative;
+        margin-top: 50%;
+        background-color: #161616;
+        border: 1px solid firebrick;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
+
+
+/*------------------
+    Mobile View 
+--------------------- */
+
+
+@media only screen and (max-width:688px) {
+
+    .first-container {
+        width: 344px;
+        height: 550px;
+        margin: 0 auto;
+        margin-top: 50px;
+        border-radius: 30px;
+        background-color: #161616;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .left-side-content {
+        width: 220px;
+        height: 150px;
+        margin-left: 10px;
+        margin-top: 10px;
+
+    }
+
+
+    .right-side-content .banner-image img {
+        width: 233px;
+        height: 245px;
+        margin-top: 55px;
+    }
+
+    .hide-content {
+        display: none;
+    }
+
+    .header-title {
+        font-size: 20px;
+        font-weight: 700;
+        color: #fff;
+    }
+
+    .header-description {
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 46px;
+        text-align: justify;
+
+    }
+
+    .football {
+        display: none;
+    }
+
+    .card-blog {
+        display: flex;
+        flex-direction: row;
+        width: 250px;
+        height: 250px;
+        background-color: #fff;
+        border-radius: 15px;
+        margin-bottom: 100px;
+    }
+
+    .card-blog ul li {
+        display: inline-block;
+        border: 1px solid #E8E8E8;
+    }
+
+    .card-info {
+        display: flex;
+        flex-direction: row;
+        padding: 0px 5px 30px 5px;
+
+    }
+
+    .middle-container {
+
+        display: flex;
+        flex-direction: column;
+        width: 344px;
+        height: 700px;
+        margin-left: 35px;
+        margin-top: 220px;
+
+    }
+
+
+    .card-info {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 5px 30px 5px;
+
+    }
+
+
+    .card-grid {
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 10px;
+        justify-content: space-evenly;
+        align-items: center;
+
+
+    }
+
+    .card-see-more {
+        display: none;
+    }
+
+    .last-container {
+        width: 380px;
+        height: 500px;
+        margin: 0 auto;
+        position: relative;
+        margin-top: 100%;
+        background-color: #161616;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-list ul li {
+        display: flex;
+        flex-direction: column;
+        line-height: 50px;
+    }
+
+    .bonus-btn {
+        width: 187px;
+        height: 56px;
+        font-size: 24px;
+        text-decoration: none;
+        color: #fff;
+        padding: 5px 10px 5px 10px;
+        border-radius: 5px;
+        background-color: #DD0000;
+        position: absolute;
+        top: 210%;
+        left: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
 
 }

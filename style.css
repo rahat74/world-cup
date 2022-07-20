@@ -1,3 +1,6 @@
+/* -----------
+font family 
+-------------- */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@400;500;600;700;900&display=swap');
 
 body {
@@ -16,7 +19,6 @@ body {
     height: 646px;
     margin: 0 auto;
     margin-top: 50px;
-    border: 2px solid palevioletred;
     border-radius: 30px;
     background-color: #161616;
     position: relative;
@@ -87,6 +89,8 @@ body {
 
 /* --------------------------header-end ----------------------- */
 
+/*------------------------------main start ----------------------- */
+
 .middle-container {
     display: flex;
     justify-content: space-around;
@@ -97,6 +101,7 @@ body {
 
 
 }
+
 
 .card-grid {
     display: grid;
@@ -117,6 +122,37 @@ body {
     height: 362px;
     border: 1px solid #E8E8E8;
     border-radius: 10px;
+}
+
+.card-section ul li {
+    list-style-type: none;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 15px;
+    width: 213px;
+    height: 65px;
+    margin-top: 21px;
+
+}
+
+.card-section li:nth-child(3) {
+    background-color: #DD0000;
+}
+
+.card-section li:nth-child(3) a {
+    color: #fff;
+
+}
+
+.card-section ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
 }
 
 .card-info {
@@ -176,18 +212,10 @@ body {
 
 }
 
+/*------------------------------main end ----------------------- */
 
 
-
-.footer-title {
-    text-align: center;
-    color: #fff;
-}
-
-hr {
-    width: 1321px;
-    border: 0.1px solid rgba(255, 255, 255, 0.1);
-}
+/* ------------------------footer start ------------------------ */
 
 .last-container {
     width: 1600px;
@@ -203,6 +231,17 @@ hr {
     align-items: center;
 }
 
+
+.footer-title {
+    text-align: center;
+    color: #fff;
+}
+
+hr {
+    width: 1321px;
+    border: 0.1px solid rgba(255, 255, 255, 0.1);
+}
+
 .footer-list ul li {
     list-style-type: none;
     display: inline-block;
@@ -214,38 +253,6 @@ hr {
     font-size: 16px;
     color: #B9B9B9;
     padding: 0 15px;
-}
-
-
-.card-section ul li {
-    list-style-type: none;
-    background-color: #fff;
-    padding: 5px 10px;
-    border-radius: 15px;
-    width: 213px;
-    height: 65px;
-    margin-top: 21px;
-
-}
-
-.card-section li:nth-child(3) {
-    background-color: #DD0000;
-}
-
-.card-section li:nth-child(3) a {
-    color: #fff;
-
-}
-
-.card-section ul li a {
-    text-decoration: none;
-    color: #000;
-    font-size: 20px;
-    font-weight: 600;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-
 }
 
 .fa-facebook-f {
@@ -263,6 +270,7 @@ hr {
     margin-right: 20px;
 }
 
+/* ---------------------------footer end ---------------------- */
 
 /*-----------------
     Tablet Device
@@ -318,6 +326,7 @@ hr {
 
     .card-blog ul li {
         display: inline-block;
+        border: 1px solid #E8E8E8;
     }
 
     .card-info {
@@ -365,7 +374,6 @@ hr {
         position: relative;
         margin-top: 70%;
         background-color: #161616;
-        border: 1px solid firebrick;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -405,6 +413,144 @@ hr {
         justify-content: center;
         align-items: center;
 
+    }
+
+
+}
+
+
+/*------------------
+    Mobile View 
+--------------------- */
+
+
+@media only screen and (max-width:688px) {
+
+    .first-container {
+        width: 344px;
+        height: 550px;
+        margin: 0 auto;
+        margin-top: 50px;
+        border-radius: 30px;
+        background-color: #161616;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .left-side-content {
+        width: 220px;
+        height: 150px;
+        margin-left: 10px;
+        margin-top: 10px;
+
+    }
+
+
+    .right-side-content .banner-image img {
+        width: 233px;
+        height: 245px;
+        margin-top: 55px;
+    }
+
+    .hide-content {
+        display: none;
+    }
+
+    .header-title {
+        font-size: 20px;
+        font-weight: 700;
+        color: #fff;
+    }
+
+    .header-description {
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 46px;
+        text-align: justify;
+
+    }
+
+    .football {
+        display: none;
+    }
+
+    .card-blog {
+        display: flex;
+        flex-direction: row;
+        width: 250px;
+        height: 250px;
+        background-color: #fff;
+        border-radius: 15px;
+        margin-bottom: 100px;
+    }
+
+    .card-blog ul li {
+        display: inline-block;
+        border: 1px solid #E8E8E8;
+    }
+
+    .card-info {
+        display: flex;
+        flex-direction: row;
+        padding: 0px 5px 30px 5px;
+
+    }
+
+    .middle-container {
+
+        display: flex;
+        flex-direction: column;
+        width: 344px;
+        height: 700px;
+        margin-left: 35px;
+        margin-top: 550px;
+
+    }
+
+
+    .card-info {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 5px 30px 5px;
+
+    }
+
+
+    .card-grid {
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 10px;
+        justify-content: space-evenly;
+        align-items: center;
+
+
+    }
+
+    .card-see-more {
+        display: none;
+    }
+
+    .last-container {
+        width: 380px;
+        height: 500px;
+        margin: 0 auto;
+        position: relative;
+        margin-top: 200%;
+        background-color: #161616;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-list ul li {
+        display: flex;
+        flex-direction: column;
+        line-height: 50px;
     }
 
 
