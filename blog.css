@@ -62,7 +62,7 @@ body {
     width: 1321px;
     height: 646px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 140px;
 
 }
 
@@ -90,6 +90,7 @@ body {
     background-color: #161616;
     grid-row-start: 1;
     grid-row-end: 4;
+    border-radius: 15px;
 }
 
 .icon a {
@@ -113,11 +114,11 @@ body {
 
 hr {
     width: 1321px;
-    border: 2px solid rgba(255, 255, 255, 0.1);
+    border: 0.1px solid rgba(255, 255, 255, 0.1);
 }
 
 .last-container {
-    width: 1550px;
+    width: 1600px;
     height: 444px;
     margin: 0 auto;
     margin-top: 500px;
@@ -140,4 +141,39 @@ hr {
     font-size: 16px;
     color: #B9B9B9;
     padding: 0 15px;
+}
+
+
+.card-section ul li {
+    list-style-type: none;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 15px;
+    width: 213px;
+    height: 65px;
+    margin-top: 21px;
+
+}
+
+.card-section li:nth-child(3) {
+    background-color: #DD0000;
+}
+
+.card-section ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+
+@media only screen and (max-width:688px) {
+
+    .first-container {
+        flex-direction: column;
+    }
 }
